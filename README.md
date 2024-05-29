@@ -1,3 +1,1 @@
----
-permalink: /index.html
----
+# bars2022.github.io

@@ -85,7 +85,7 @@ table,td
 
 .site-title {
     color: #fff;
-    background: #2c3e50 url('BARS_Banner.jpg') no-repeat;
+    background: #2c3e50 url('BARS_logo.png') no-repeat;
     background-size: 100% 100%;
     padding: .5em .5em 4.5em .5em;
     margin-bottom: 0;
@@ -280,7 +280,7 @@ a,a:visited,a:hover,a:link,input,textarea {
 }
 
 .content a:hover,.content a:focus {
-    background: #e74c3c;
+    background: #574e5e;
     color: #fff;
     border: 0;
 }
@@ -416,3 +416,24 @@ header {
 iframe, object, embed {
         max-width: 100%;
 }
+
+.map {
+}
+#menu-outer {
+	height: 84px;
+	background: url(images/bar-bg.jpg) repeat-x;
+}
+
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+
+ul#horizontal-list {
+	list-style: none;
+	padding-top: 20px;
+	paddling-left:200px;
+	}
+ul#horizontal-list li {
+		display: inline;
+	}
