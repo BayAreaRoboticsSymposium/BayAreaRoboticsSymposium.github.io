@@ -1,1 +1,3 @@
-# bars2022.github.io
+# Website data for  Bay area robotics symposium
+
+https://bayarearoboticssymposium.github.io/
