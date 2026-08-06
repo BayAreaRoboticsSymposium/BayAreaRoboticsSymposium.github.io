@@ -33,8 +33,12 @@ jQuery(function ($) {
         $('a.page-scroll').on('click', function (e) {
             e.preventDefault();
             var $anchor = $(this);
+            var $target = $($anchor.attr("href"));
+            var headerOffset = $("nav.navbar").outerHeight() + 16;
+            var scrollTarget = Math.max(0, $target.offset().top - headerOffset);
+
             $('html, body').stop().animate({
-                scrollTop : $($anchor.attr('href')).offset().top
+                scrollTop : scrollTarget
             }, 1500, 'easeInOutExpo');
         });
     }());
