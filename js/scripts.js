@@ -26,6 +26,40 @@ jQuery(function ($) {
     }());
 
     // --------------------------------------------------------------------
+    // Scroll spy alignment
+    // --------------------------------------------------------------------
+
+    (function () {
+        var body = jQuery("body");
+        var navbar = jQuery("nav.navbar");
+        var firstSection = jQuery(".section-wrapper");
+        var lastOffset = null;
+
+        function updateScrollSpyOffset() {
+            var scrollSpy = body.data("bs.scrollspy");
+
+            if (!scrollSpy || !firstSection.length) {
+                return;
+            }
+
+            var sectionPaddingTop = parseFloat(firstSection.first().css("padding-top")) || 0;
+            var visibilityBuffer = 40;
+            var offset = Math.max(0, Math.round(navbar.outerHeight() - sectionPaddingTop + visibilityBuffer));
+
+            if (lastOffset === offset) {
+                return;
+            }
+
+            lastOffset = offset;
+            scrollSpy.options.offset = offset;
+            scrollSpy.refresh();
+            scrollSpy.process();
+        }
+
+        jQuery(window).on("load resize scroll", updateScrollSpyOffset);
+    }());
+
+    // --------------------------------------------------------------------
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     // --------------------------------------------------------------------
 
