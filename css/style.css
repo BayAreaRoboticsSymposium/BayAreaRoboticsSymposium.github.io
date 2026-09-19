@@ -795,6 +795,14 @@ button:focus,
     color : #8a6a00;
     }
 
+.sponsor-tier-silver .sponsor-tier-title {
+    color : #6f7782;
+    }
+
+.sponsor-tier-bronze .sponsor-tier-title {
+    color : #9a5b23;
+    }
+
 .sponsor-logo-grid {
     display : flex;
     flex-wrap : wrap;
@@ -822,10 +830,26 @@ button:focus,
 
 .sponsor-logo-link:hover,
 .sponsor-logo-link:focus {
-    border-color : #C4820F;
     background : #ffffff;
-    box-shadow : 0 6px 16px rgba(0, 50, 98, .12);
     transform : translateY(-1px);
+    }
+
+.sponsor-tier-gold .sponsor-logo-link:hover,
+.sponsor-tier-gold .sponsor-logo-link:focus {
+    border-color : #C4820F;
+    box-shadow : 0 6px 16px rgba(196, 130, 15, .2);
+    }
+
+.sponsor-tier-silver .sponsor-logo-link:hover,
+.sponsor-tier-silver .sponsor-logo-link:focus {
+    border-color : #7b8491;
+    box-shadow : 0 6px 16px rgba(123, 132, 145, .22);
+    }
+
+.sponsor-tier-bronze .sponsor-logo-link:hover,
+.sponsor-tier-bronze .sponsor-logo-link:focus {
+    border-color : #b87333;
+    box-shadow : 0 6px 16px rgba(184, 115, 51, .22);
     }
 
 .sponsor-logo-link img {
