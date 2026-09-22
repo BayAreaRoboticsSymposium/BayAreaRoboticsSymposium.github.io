@@ -635,6 +635,19 @@ button:focus,
     margin-top : 0;
     }
 
+@media (min-width : 992px) {
+    .organizer-leadership {
+        display : grid;
+        grid-template-columns : minmax(0, 3fr) minmax(0, 2fr);
+        gap : 32px;
+        align-items : start;
+        }
+
+    .organizer-leadership .organizer-group {
+        margin-top : 0;
+        }
+    }
+
 .organizer-group h3 {
     margin : 0 0 14px;
     color : #353e55;
@@ -875,6 +888,23 @@ button:focus,
 
 .sponsor-logo-ludo {
     transform : scale(2.0);
+    }
+
+@media (min-width : 1200px) {
+    .sponsor-logo-grid {
+        display : grid;
+        grid-template-columns : repeat(4, minmax(0, 1fr));
+        }
+
+    .sponsor-tier-gold .sponsor-logo-grid {
+        grid-template-columns : repeat(3, minmax(0, 1fr));
+        padding-left : 0;
+        }
+
+    .sponsor-logo-link,
+    .sponsor-logo-large {
+        width : 100%;
+        }
     }
 
 @media (max-width : 768px) {
