@@ -634,6 +634,7 @@ button:focus,
     .hero-registration-action {
         width : 100%;
         }
+
     }
 
 /*---------------------------
@@ -683,10 +684,9 @@ button:focus,
     line-height : 1.55;
     }
 
-.ticket-copy .ticket-note {
-    margin-top : 7px;
-    color : #6b7280;
-    font-size : 14px;
+.ticket-checkin {
+    margin : 14px 0 0;
+    text-align : center;
     }
 
 .ticket-button {
