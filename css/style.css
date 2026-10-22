@@ -1097,6 +1097,97 @@ button:focus,
     white-space : nowrap;
     }
 
+.speaker-schedule {
+    margin-top : 34px;
+    }
+
+.speaker-schedule h3 {
+    margin : 34px 0 5px;
+    color : #003262;
+    font-size : 22px;
+    font-weight : 500;
+    }
+
+.speaker-schedule h3:first-child {
+    margin-top : 0;
+    }
+
+.speaker-format {
+    margin : 0 0 18px;
+    color : #666f7d;
+    font-size : 14px;
+    }
+
+.session-grid {
+    display : grid;
+    gap : 18px;
+    }
+
+.faculty-session-grid {
+    grid-template-columns : repeat(4, minmax(0, 1fr));
+    }
+
+.spotlight-session-grid {
+    grid-template-columns : repeat(2, minmax(0, 1fr));
+    }
+
+.session-list {
+    padding-top : 13px;
+    border-top : 3px solid #003262;
+    }
+
+.session-list h4 {
+    margin : 0 0 3px;
+    color : #353e55;
+    font-size : 17px;
+    font-weight : 700;
+    }
+
+.session-meta {
+    margin : 0 0 12px;
+    color : #717986;
+    font-size : 13px;
+    line-height : 1.4;
+    }
+
+.session-list ol {
+    margin : 0;
+    padding-left : 27px;
+    }
+
+.session-list li {
+    padding : 6px 0 7px 2px;
+    color : #353e55;
+    line-height : 1.25;
+    border-bottom : 1px solid #e6e9ef;
+    }
+
+.session-list li:last-child {
+    border-bottom : 0;
+    }
+
+.speaker-name,
+.speaker-affiliation {
+    display : block;
+    }
+
+.speaker-name {
+    font-size : 14px;
+    font-weight : 500;
+    }
+
+.speaker-affiliation {
+    margin-top : 2px;
+    color : #777f8c;
+    font-size : 12px;
+    }
+
+@media (max-width : 991px) {
+    .faculty-session-grid {
+        grid-template-columns : repeat(2, minmax(0, 1fr));
+        }
+    }
+
 @media (max-width : 600px) {
     #section-venue iframe {
         height : 300px;
@@ -1110,6 +1201,11 @@ button:focus,
     #section-schedule td:first-child {
         width : 38%;
         white-space : normal;
+        }
+
+    .faculty-session-grid,
+    .spotlight-session-grid {
+        grid-template-columns : 1fr;
         }
     }
 
