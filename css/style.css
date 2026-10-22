@@ -1127,6 +1127,7 @@ button:focus,
     grid-template-columns : repeat(4, minmax(0, 1fr));
     }
 
+.keynote-session-grid,
 .spotlight-session-grid {
     grid-template-columns : repeat(2, minmax(0, 1fr));
     }
@@ -1148,6 +1149,13 @@ button:focus,
     color : #717986;
     font-size : 13px;
     line-height : 1.4;
+    }
+
+.keynote-topic {
+    margin : 0;
+    color : #4f5867;
+    font-size : 14px;
+    line-height : 1.55;
     }
 
 .session-list ol {
@@ -1204,6 +1212,7 @@ button:focus,
         }
 
     .faculty-session-grid,
+    .keynote-session-grid,
     .spotlight-session-grid {
         grid-template-columns : 1fr;
         }
