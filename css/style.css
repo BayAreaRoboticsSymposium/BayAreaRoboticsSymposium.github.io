@@ -1158,6 +1158,51 @@ button:focus,
     line-height : 1.55;
     }
 
+.keynote-talk-title {
+    margin : 0;
+    color : #353e55;
+    font-size : 16px;
+    font-weight : 600;
+    line-height : 1.45;
+    }
+
+.keynote-details {
+    margin-top : 15px;
+    padding-top : 12px;
+    border-top : 1px solid #dfe3ea;
+    }
+
+.keynote-details summary {
+    color : #003262;
+    font-size : 14px;
+    font-weight : 600;
+    cursor : pointer;
+    }
+
+.keynote-details[open] summary {
+    margin-bottom : 18px;
+    }
+
+.keynote-detail + .keynote-detail {
+    margin-top : 20px;
+    }
+
+.keynote-detail h5 {
+    margin : 0 0 6px;
+    color : #003262;
+    font-size : 12px;
+    font-weight : 700;
+    text-transform : uppercase;
+    letter-spacing : .04em;
+    }
+
+.keynote-detail p {
+    margin : 0;
+    color : #4f5867;
+    font-size : 14px;
+    line-height : 1.65;
+    }
+
 .session-list ol {
     margin : 0;
     padding-left : 27px;
