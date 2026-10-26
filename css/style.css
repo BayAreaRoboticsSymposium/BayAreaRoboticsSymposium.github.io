@@ -569,8 +569,8 @@ button:focus,
     transition : background-color .2s ease, border-color .2s ease, box-shadow .2s ease, transform .2s ease;
     }
 
-.hero-registration:hover,
-.hero-registration:focus {
+.hero-registration[href]:hover,
+.hero-registration[href]:focus {
     color : #003262;
     background : #ffffff;
     border-color : #C4820F;
@@ -590,6 +590,10 @@ button:focus,
     flex : 0 0 auto;
     background : #2e8b57;
     border-radius : 50%;
+    }
+
+.hero-registration-dot-closed {
+    background : #7a8089;
     }
 
 .hero-registration-action {
@@ -668,6 +672,15 @@ button:focus,
     border-top : 5px solid #003262;
     border-bottom : 1px solid #d8dee8;
     box-shadow : 0 5px 18px rgba(0, 50, 98, .08);
+    }
+
+.ticket-panel-closed {
+    justify-content : center;
+    text-align : center;
+    }
+
+.ticket-panel-closed .ticket-copy {
+    width : 100%;
     }
 
 .ticket-copy h3 {
