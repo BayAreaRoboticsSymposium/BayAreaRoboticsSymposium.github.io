@@ -11,6 +11,41 @@ jQuery(function ($) {
     }());
 
     // --------------------------------------------------------------------
+    // Event day message (Pacific Time)
+    // --------------------------------------------------------------------
+
+    (function () {
+        var tag = $('#hero-event-tag');
+
+        if (!tag.length || !window.Intl || !Intl.DateTimeFormat.prototype.formatToParts) {
+            return;
+        }
+
+        var dateParts = new Intl.DateTimeFormat('en-US', {
+            timeZone : 'America/Los_Angeles',
+            year     : 'numeric',
+            month    : '2-digit',
+            day      : '2-digit'
+        }).formatToParts(new Date());
+        var date = {};
+
+        dateParts.forEach(function (part) {
+            date[part.type] = part.value;
+        });
+
+        var dateKey = date.year + '-' + date.month + '-' + date.day;
+        var messages = {
+            '2026-10-29' : 'See you tomorrow!',
+            '2026-10-30' : "Today’s the day!"
+        };
+
+        if (messages[dateKey]) {
+            $('#hero-event-tag-text').text(messages[dateKey]);
+            tag.addClass('is-visible');
+        }
+    }());
+
+    // --------------------------------------------------------------------
     // One Page Navigation
     // --------------------------------------------------------------------
 
