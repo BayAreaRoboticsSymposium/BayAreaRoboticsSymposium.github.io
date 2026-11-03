@@ -16,7 +16,7 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 
 		<!-- Style CSS -->
-		<link href="css/style.css?v=20261029-1" rel="stylesheet">
+		<link href="css/style.css?v=20261103-4" rel="stylesheet">
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -54,7 +54,7 @@
 								<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
 								<li class="hidden"><a href="#page-top"></a></li>
 								<li data_temp_dwid="1"><a class="page-scroll" href="#section-intro" data_temp_dwid="2">About</a></li>
-								<li data_temp_dwid="1"><a class="page-scroll" href="#section-tickets" data_temp_dwid="2">Tickets</a></li>
+								<li><a class="page-scroll" href="#section-highlights">Highlights</a></li>
 								<li><a class="page-scroll" href="#section-organizers">Organizers</a></li>
 								<li><a class="page-scroll" href="#section-sponsors">Sponsors</a></li>
 								<li><a class="page-scroll" href="#section-venue">Venue</a></li>
@@ -77,8 +77,8 @@
 					<div class="hero-event-tag" id="hero-event-tag"><span class="hero-event-tag-sparkle" aria-hidden="true">&#10022;</span><span id="hero-event-tag-text"></span></div>
 					<div class="event-date"><strong data_temp_dwid="1">Friday, October 30, 2026, UC Berkeley.</strong></div>
 					<h1>Bay Area Robotics Symposium 2026</h1>
-					<div class="hero-registration hero-registration-closed">
-						<span class="hero-registration-status"><span class="hero-registration-dot hero-registration-dot-closed" aria-hidden="true"></span>Registration is now closed.</span>
+					<div class="hero-registration hero-post-event">
+						<span class="hero-registration-status"><span class="hero-registration-dot hero-registration-dot-thanks" aria-hidden="true"></span>Thank you for joining us!</span>
 					</div>
 					<!-- <p>Site under construction, details to be posted soon!</p>  -->
 				</div>
@@ -86,6 +86,81 @@
 			</div>
 		</div>
 		<!-- .Jumbotron-->
+
+		<section id="section-highlights" class="section-wrapper event-highlights">
+			<div class="container">
+				<div class="highlights-heading">
+					<h2>BARS 2026 Highlights</h2>
+					<p class="lead">Thank you to everyone who joined us at BARS 2026! Here is a look back at the talks, posters, and conversations that made the day special.</p>
+				</div>
+
+				<div class="highlights-gallery" aria-label="BARS 2026 event photos">
+					<figure class="highlight-photo highlight-photo-lead">
+						<a class="highlight-photo-link" href="./img/event/web/posters.jpg">
+							<img src="./img/event/web/posters.jpg" alt="BARS 2026 attendees discussing research during the outdoor poster session" loading="lazy">
+						</a>
+					</figure>
+
+					<div class="highlights-feature-grid">
+						<figure class="highlight-photo highlight-photo-portrait">
+							<a class="highlight-photo-link" href="./img/event/web/opening-speaker.jpg">
+								<img src="./img/event/web/opening-speaker.jpg" alt="A speaker addressing the BARS 2026 audience from the Pauley Ballroom stage" loading="lazy">
+							</a>
+						</figure>
+						<div class="highlights-side-grid">
+							<figure class="highlight-photo">
+								<a class="highlight-photo-link" href="./img/event/web/audience.jpg">
+									<img src="./img/event/web/audience.jpg" alt="The BARS 2026 audience gathered in Pauley Ballroom" loading="lazy">
+								</a>
+							</figure>
+							<figure class="highlight-photo">
+								<a class="highlight-photo-link" href="./img/event/web/meta-speaker.jpg">
+									<img src="./img/event/web/meta-speaker.jpg" alt="An industry spotlight speaker presenting at BARS 2026" loading="lazy">
+								</a>
+							</figure>
+							<figure class="highlight-photo">
+								<a class="highlight-photo-link" href="./img/event/web/waymo-speaker.jpg">
+									<img src="./img/event/web/waymo-speaker.jpg" alt="A Waymo spotlight speaker presenting at BARS 2026" loading="lazy">
+								</a>
+							</figure>
+							<figure class="highlight-photo">
+								<a class="highlight-photo-link" href="./img/event/web/ludo-speaker.jpg">
+									<img src="./img/event/web/ludo-speaker.jpg" alt="A Ludo Robotics spotlight speaker presenting at BARS 2026" loading="lazy">
+								</a>
+							</figure>
+						</div>
+					</div>
+
+					<div class="highlights-final-grid">
+						<figure class="highlight-photo">
+							<a class="highlight-photo-link" href="./img/event/web/demos.jpg">
+								<img src="./img/event/web/demos.jpg" alt="Attendees trying a robotic arm demonstration at BARS 2026" loading="lazy">
+							</a>
+						</figure>
+						<figure class="highlight-photo">
+							<a class="highlight-photo-link" href="./img/event/web/chestnut-demo.jpg">
+								<img src="./img/event/web/chestnut-demo.jpg" alt="Attendees visiting a robotics demonstration at BARS 2026" loading="lazy">
+							</a>
+						</figure>
+						<figure class="highlight-photo">
+							<a class="highlight-photo-link" href="./img/event/web/talks.jpg">
+								<img src="./img/event/web/talks.jpg" alt="Attendees watching a presentation in Pauley Ballroom at BARS 2026" loading="lazy">
+							</a>
+						</figure>
+						<figure class="highlight-photo">
+							<a class="highlight-photo-link" href="./img/event/web/poster-conversation.jpg">
+								<img src="./img/event/web/poster-conversation.jpg" alt="Researchers discussing a poster at BARS 2026" loading="lazy">
+							</a>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div id="highlight-lightbox" class="highlight-lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Expanded event photo">
+			<button class="highlight-lightbox-close" type="button" aria-label="Close expanded photo">&times;</button>
+			<img id="highlight-lightbox-image" src="" alt="">
+		</div>
 
 		<!--
 			<div class="jumbotron text-center">
@@ -102,7 +177,7 @@
 
 
 
-		<section id="section-intro" class="section-wrapper about-event">
+		<section id="section-intro" class="section-wrapper about-event gray-bg">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10">
@@ -117,23 +192,6 @@
 			</div>
 		</section>
 
-
-		<section id="section-tickets" class="section-wrapper section-contact gray-bg">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h2>Tickets</h2>
-						<div class="ticket-panel ticket-panel-closed">
-							<div class="ticket-copy">
-								<h3>Registration is closed</h3>
-								<p>Registration for the 2026 Bay Area Robotics Symposium is now closed.</p>
-							</div>
-						</div>
-						<p class="ticket-checkin"><strong>Check-in:</strong> Please have your registration confirmation email ready when you arrive.</p>
-					</div>
-				</div>
-			</div>
-		</section>
 
 		<section id="section-organizers" class="section-wrapper about-event">
 			<div class="container">
@@ -548,7 +606,7 @@
 		<script src="https://maps.googleapis.com/maps/api/js"></script>
 
 		<!--<script src="js/one-page-nav.js"></script>-->
-		<script src="js/scripts.js?v=20261029-1"></script>
+		<script src="js/scripts.js?v=20261103-2"></script>
 
 		<script>
 			function myFunction(id) {

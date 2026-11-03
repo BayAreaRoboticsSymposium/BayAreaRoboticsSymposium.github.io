@@ -177,6 +177,50 @@ jQuery(function ($) {
         }
     }());
 
+    // --------------------------------------------------------------------
+    // Event Photo Lightbox
+    // --------------------------------------------------------------------
+
+    (function () {
+        var $lightbox = $('#highlight-lightbox'),
+            $lightboxImage = $('#highlight-lightbox-image'),
+            $lastPhotoLink;
+
+        function closeLightbox() {
+            $lightbox.removeClass('is-open').attr('aria-hidden', 'true');
+            $lightboxImage.attr({src : '', alt : ''});
+            $('body').removeClass('lightbox-open');
+            if ($lastPhotoLink) {
+                $lastPhotoLink.trigger('focus');
+            }
+        }
+
+        $('.highlight-photo-link').on('click', function (event) {
+            var $photo = $(this).find('img');
+            event.preventDefault();
+            $lastPhotoLink = $(this);
+            $lightboxImage.attr({
+                src : $(this).attr('href'),
+                alt : $photo.attr('alt')
+            });
+            $lightbox.addClass('is-open').attr('aria-hidden', 'false');
+            $('body').addClass('lightbox-open');
+            $lightbox.find('.highlight-lightbox-close').trigger('focus');
+        });
+
+        $lightbox.find('.highlight-lightbox-close').on('click', closeLightbox);
+        $lightbox.on('click', function (event) {
+            if (event.target === this) {
+                closeLightbox();
+            }
+        });
+        $(document).on('keydown', function (event) {
+            if (event.key === 'Escape' && $lightbox.hasClass('is-open')) {
+                closeLightbox();
+            }
+        });
+    }());
+
 // ===== Scroll to Top ==== 
 $(window).scroll(function() {
     if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
